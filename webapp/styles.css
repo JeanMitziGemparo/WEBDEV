@@ -1,1 +1,53 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+/* General background */
+body {
+  background-color:  #ffd7e8; 
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar .navbar-brand { /*daisy daze logo */
+  color: #866ec7 !important;
+}
+
+.navbar .nav-link {
+  color: #866ec7 !important; /* mga menu sa navbar */
+}
+
+.navbar .nav-link:hover {
+  color: #F8BBD0 !important; 
+}
+
+/* Buttons */
+.btn-cart{
+    background-color:#ebd9e2 !important; /* button sa add to cart */
+    border-color: #ebd9e2;
+    color: #333;
+}
+.btn-cart:hover {
+    background-color: #f06292;
+    border-color:  #f06292;
+    color: #333;
+}
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border: 2px solid #bf9fee; 
+  border-radius: 15px;
+}
+
+.card-title {
+  color: #866ec7;
+}
+
+/* Product images inside cards */
+.card img {
+  width: 100%;          /* card width*/
+  height: 250px;        /* height ng image */
+  object-fit: cover;    /* crops the image */
+  border-radius: 10px;  
+}
+
+

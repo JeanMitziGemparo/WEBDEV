@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Shop - Bootstrap</title>
+
+  <!-- Bootstrap CSS (comment out to see plain HTML) -->
+  <link href="./dist/styles.css" rel="stylesheet">
+</head>
+<body>
+    
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="./bootstrap.html">Daisy Daze</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./bootstrap.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./product.html">Flowers</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./cart.html">🛒 Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Checkout Section -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Checkout</h2>
+    <div class="row">
+      <!-- Billing Form -->
+      <div class="col-md-7">
+        <h4 class="mb-3">Billing Details</h4>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Juan Dela Cruz" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Delivery Address</label>
+            <input type="text" class="form-control" id="address" placeholder="123 Flower St, Manila" required>
+          </div>
+          <div class="mb-3">
+            <label for="payment" class="form-label">Payment Method</label>
+            <select class="form-select" id="payment" required>
+              <option value="">Choose...</option>
+              <option>Credit/Debit Card</option>
+              <option>GCash</option>
+              <option>Cash on Delivery</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success">Place Order</button>
+        </form>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="col-md-5">
+        <h4 class="mb-3">Order Summary</h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Red Roses</span>
+            <strong>₱499</strong>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Sunflower Bouquet</span>
+            <strong>₱399</strong>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Tulips</span>
+            <strong>₱459</strong>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total</span>
+            <strong>₱1,357</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Daisy Daze | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
